@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    background-color: rgb(243, 210, 102);
+    margin-bottom: 30px;
+}
+
+main{
+    margin-bottom: 30px;
+}
+
+.red {
+    color: red;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.text {
+    text-align: center;
+    transform: scaleX(-1);
+    letter-spacing: 5px;
+    font-size: 80px;
+    color: blue;
+}
+
+form {
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(243, 210, 102);
+}

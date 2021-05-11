@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>反転タイピングゲーム</title>
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <h1>読めるかな？</h1>
+        </a>
+        <p>反転した文字を読む脳トレゲーム</p>
+    </header>
+
+    <main>
+        <p class="red">←　←　←</p>
+        <p id="text" class="text">e63</p>
+        <p>表示されている文字を、右から順に入力しましょう。</p>
+        <form name="fm1" autocomplete="off">
+            <input type="text" id="input" autofocus maxlength="3" onkeyup="setNextFocus(this)">
+            <input type="button" value="答え合わせ" onclick="check()">
+        </form>
+
+        <div id="result">
+            <p>正解数：<span id="c-num"></span>/<span id="q-num"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://taiyosite.com" target="_blank">Taiyo-Blog</a>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
