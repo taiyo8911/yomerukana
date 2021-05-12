@@ -6,23 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>反転タイピングゲーム</title>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <title>反転文字読めるかな？</title>
 </head>
 
 <body>
     <header>
         <a href="">
-            <h1>読めるかな？</h1>
+            <h1>反転文字読めるかな？</h1>
         </a>
-        <p>反転した文字を読む脳トレゲーム</p>
+        <p style="margin-bottom: 10px;">反転した文字を読む脳トレゲーム</p>
+        <div class="twitter">
+            <a href="//twitter.com/share" class="twitter-share-button" data-text="反転文字読めるかな？"
+                data-url="https://taiyo8911.github.io/yomerukana/" data-lang="ja" data-hashtags="反転文字読めるかな">ツイート</a>
+        </div>
     </header>
 
     <main>
         <p class="red">←　←　←</p>
+
         <p id="text" class="text">e63</p>
-        <p>表示されている文字を、右から順に入力しましょう。</p>
+
+        <p>表示されている文字を、<span style="color: red;">右から順</span>に入力しましょう。</p>
+
         <form name="fm1" autocomplete="off">
             <input type="text" id="input" autofocus maxlength="3" onkeyup="setNextFocus(this)">
+            <br>
             <input type="button" value="答え合わせ" onclick="check()">
         </form>
 
