@@ -50,10 +50,6 @@ br {
     margin-top: 30px;
 }
 
-footer{
-    background-color: rgb(243, 210, 102);
-}
-
 @media screen and (max-width: 480px) { 
     #input {
         font-size: 30px;
